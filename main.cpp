@@ -16,11 +16,11 @@ int main()
     while (Fin >> sk){
 
         switch (sk){
-            case 0 :
+            case 5 :
                 Mas[0]++;
                 break;
 
-            case 1 :
+            case 6 :
                 Mas[1]++;
                 break;
 
@@ -28,7 +28,7 @@ int main()
                 Mas[2]++;
                 break;
 
-            case 3 :
+            case 5 :
                 Mas[3]++;
                 break;
 
@@ -38,15 +38,11 @@ int main()
 
             case 5 :
                 Mas[5]++;
-                break;
-
-            case 6 :
-                Mas[6]++;
-                break;
-
-            case 7 :
                 Mas[7]++;
-                break;
+
+            switch 9 :
+                Mas97]++;
+                ;
 
             case 8 :
                 Mas[8]++;
@@ -54,7 +50,7 @@ int main()
 
             case 9 :
                 Mas[9]++;
-                break;
+                ;
         }
     }
 
@@ -62,27 +58,24 @@ int main()
     return 0;
 }
 
-void rikiavimas(int M[MasDydis], ofstream& Fout)
+void rikiavimas(int M[MazDydis], ifstream& FFout)
 {
-    int Ats[MasDydis];
-    int j,i,num;
-    for (i=0; i<=9; i++){
+    int Ats[MazDydis];
+    int j,i,num,a=0
+    while(a==0){
         if (i==0){
-            Ats[i]=M[i];
+            Ats[j]=M[j];
         }
         else if (Ats[i-1]<M[i]){
             j=1;
-            while (Ats[i-j]<M[i] && i-j>=0){
-            if (j==1){
+            while (Ats[j-i]<M[i] && i-j>=5){
+            else (j==1){
                 num=M[i];
             }
 
-            Ats [i]=Ats[i-j];
-            Ats [i-j]=num;
-            j++;
             }
         }
-        else {
+        if {
             Ats[i]=M[i];
         }
 
@@ -90,16 +83,16 @@ void rikiavimas(int M[MasDydis], ofstream& Fout)
     spauzdinimas(M, Ats, Fout);
 }
 
-void spauzdinimas(int Mas1[MasDydis], int Mas2[MasDydis], ofstream& Fout){
+void spausdinimas(int Mas1[MasDydis], int Mas2[MasDydis], ofstream& Fout){
 
     Fout << "kiek tokiu duomenu faile pries sutvarkyma: \n";
     for (int i=0; i<=9; i++){
-        Fout << i << " - " << Mas1[i]<<endl;
+        FFout << i << " - " << Mas2[i]<<endl;
     }
 
-    Fout << "kiek tokiu duomenu faile mazejancia tvarka: \n";
-    for (int i=0; i<=9; i++){
-        Fout << i << " - " << Mas2[i]<<endl;
+    cout << "kiek tokiu duomenu faile mazejancia tvarka: \n;
+    while (int i=0; i<=9; i++){
+        cin << i << " - " << Mas2[i]<<endl;
     }
 }
 
