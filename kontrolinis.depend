@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1513429466 source:z:\karolis.j\2017.12.16\kontrolinis\main.cpp
+	<iostream>
+	<fstream>
+
